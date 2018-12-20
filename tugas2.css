@@ -16,11 +16,11 @@ body{
 {
     0%
     { 
-        transform: rotate(0deg );
+        transform: translate(-50%,-50%) rotate(0deg );
     } 
     100%
     { 
-        transform: rotate(360deg );
+        transform: translate(-50%,-50%) rotate(360deg );
     } 
 }
 .loader span{
@@ -29,6 +29,7 @@ body{
     height: 100%;
     border-radius: 50%;
     background: linear-gradient(#14ffe9,#851eef,#ffffff,#ff00e0);
+    filter: blur(3px);
 }
 .loader:after
 {
@@ -41,3 +42,7 @@ body{
     background: lightgray;
     border-radius: 50%;
 }
+
+@media screen and (min-width: 400px) {
+    
+  }
